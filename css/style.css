@@ -98,3 +98,51 @@ a {
     border-color: rgba(255, 255, 255, 0.35);
   }
 }
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.08em;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-carousel,
+.hero-carousel .carousel-item,
+.hero-slide {
+  min-height: 100vh;
+}
+
+.hero-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(11, 34, 51, 0.35), rgba(11, 34, 51, 0.8)),
+    linear-gradient(90deg, rgba(11, 34, 51, 0.65), rgba(11, 34, 51, 0.2));
+}
+
+.hero-slide .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  .hero-carousel,
+  .hero-carousel .carousel-item,
+  .hero-slide {
+    min-height: 100svh;
+  }
+}

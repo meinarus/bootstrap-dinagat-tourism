@@ -17,8 +17,16 @@ body {
     linear-gradient(180deg, #fcfbf7 0%, var(--paper) 100%);
 }
 
-h1,h2,h3,h4,
-.display-1,.display-2,.display-3,.display-4,.display-5,.display-6 {
+h1,
+h2,
+h3,
+h4,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
   font-family: "Playfair Display", serif;
   letter-spacing: 0.01em;
 }
@@ -29,7 +37,10 @@ a {
 
 .navbar-dinagat {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  transition: background-color 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    padding 0.25s ease;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -93,7 +104,7 @@ a {
   .navbar-home .navbar-toggler {
     color: #fff;
   }
-  
+
   .navbar-home .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.35);
   }
@@ -148,7 +159,9 @@ a {
 }
 
 .hover-lift {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .hover-lift:hover {
@@ -156,9 +169,24 @@ a {
   box-shadow: var(--shadow-soft) !important;
 }
 
-.text-seafoam { color: var(--seafoam) !important; }
-.text-coral { color: var(--coral) !important; }
-.bg-paper { background-color: var(--paper) !important; }
-.bg-navy { background-color: var(--navy) !important; }
-.bg-seafoam { background-color: var(--seafoam) !important; }
-.bg-coral { background-color: var(--coral) !important; }
+.text-seafoam {
+  color: var(--seafoam) !important;
+}
+.text-coral {
+  color: var(--coral) !important;
+}
+.text-navy {
+  color: var(--navy) !important;
+}
+.bg-paper {
+  background-color: var(--paper) !important;
+}
+.bg-navy {
+  background-color: var(--navy) !important;
+}
+.bg-seafoam {
+  background-color: var(--seafoam) !important;
+}
+.bg-coral {
+  background-color: var(--coral) !important;
+}

@@ -160,3 +160,5 @@ a {
 .text-coral { color: var(--coral) !important; }
 .bg-paper { background-color: var(--paper) !important; }
 .bg-navy { background-color: var(--navy) !important; }
+.bg-seafoam { background-color: var(--seafoam) !important; }
+.bg-coral { background-color: var(--coral) !important; }

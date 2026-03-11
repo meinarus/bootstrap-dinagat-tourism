@@ -87,8 +87,10 @@ a {
 
 .navbar-home.scrolled .navbar-brand,
 .navbar-home.scrolled .nav-link,
+.navbar-home.scrolled .nav-link.active,
 .navbar-solid .navbar-brand,
 .navbar-solid .nav-link,
+.navbar-solid .nav-link.active,
 .navbar-solid .navbar-toggler {
   color: #fff;
 }

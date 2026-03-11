@@ -146,3 +146,17 @@ a {
     min-height: 100svh;
   }
 }
+
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: var(--shadow-soft) !important;
+}
+
+.text-seafoam { color: var(--seafoam) !important; }
+.text-coral { color: var(--coral) !important; }
+.bg-paper { background-color: var(--paper) !important; }
+.bg-navy { background-color: var(--navy) !important; }

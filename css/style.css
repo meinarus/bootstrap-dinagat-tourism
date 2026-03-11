@@ -61,8 +61,9 @@ a {
 
 .navbar-home .navbar-brand,
 .navbar-home .nav-link,
+.navbar-home .nav-link.active,
 .navbar-home .navbar-toggler {
-  color: var(--ink);
+  color: #fff;
 }
 
 .navbar-home .nav-link.active,
@@ -74,7 +75,7 @@ a {
 .navbar-home .navbar-toggler,
 .navbar-home.scrolled .navbar-toggler,
 .navbar-solid .navbar-toggler {
-  border-color: rgba(35, 49, 59, 0.35);
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 .navbar-home.scrolled,

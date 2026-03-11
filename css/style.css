@@ -1,1 +1,100 @@
-/* Base styles for Dinagat Islands Tourism */
+:root {
+  --paper: #f7f4ec;
+  --paper-deep: #efe7d3;
+  --navy: #12324a;
+  --navy-deep: #0b2233;
+  --seafoam: #7fb7ad;
+  --coral: #d77a61;
+  --ink: #23313b;
+  --shadow-soft: 0 1rem 2rem rgba(18, 50, 74, 0.12);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(127, 183, 173, 0.12), transparent 28%),
+    linear-gradient(180deg, #fcfbf7 0%, var(--paper) 100%);
+}
+
+h1,h2,h3,h4,
+.display-1,.display-2,.display-3,.display-4,.display-5,.display-6 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+.navbar-dinagat {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, padding 0.25s ease;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-dinagat .navbar-brand {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.03em;
+}
+
+.navbar-dinagat .nav-link {
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-home {
+  background: transparent;
+}
+
+.navbar-home .navbar-brand,
+.navbar-home .nav-link,
+.navbar-home .navbar-toggler {
+  color: var(--ink);
+}
+
+.navbar-home .nav-link.active,
+.navbar-solid .nav-link.active,
+.navbar-home.scrolled .nav-link.active {
+  border-color: currentColor;
+}
+
+.navbar-home .navbar-toggler,
+.navbar-home.scrolled .navbar-toggler,
+.navbar-solid .navbar-toggler {
+  border-color: rgba(35, 49, 59, 0.35);
+}
+
+.navbar-home.scrolled,
+.navbar-solid {
+  background: rgba(11, 34, 51, 0.96);
+  box-shadow: 0 0.75rem 1.75rem rgba(11, 34, 51, 0.22);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar-home.scrolled .navbar-brand,
+.navbar-home.scrolled .nav-link,
+.navbar-solid .navbar-brand,
+.navbar-solid .nav-link,
+.navbar-solid .navbar-toggler {
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-home {
+    background: rgba(11, 34, 51, 0.96);
+    box-shadow: 0 0.75rem 1.75rem rgba(11, 34, 51, 0.22);
+  }
+
+  .navbar-home .navbar-brand,
+  .navbar-home .nav-link,
+  .navbar-home .navbar-toggler {
+    color: #fff;
+  }
+  
+  .navbar-home .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+}
